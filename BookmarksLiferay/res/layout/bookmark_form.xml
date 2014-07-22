@@ -12,15 +12,14 @@
         android:layout_alignBaseline="@+id/textView1"
         android:layout_alignBottom="@+id/textView1"
         android:layout_marginLeft="14dp"
-        android:layout_toRightOf="@+id/textView1"/>
+        android:layout_toRightOf="@+id/textView1" />
 
     <EditText
         android:id="@+id/urlTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView4"
-        
-        android:layout_alignLeft="@+id/nameTextView"/>
+        android:layout_alignLeft="@+id/nameTextView" />
 
     <LinearLayout
         android:id="@+id/linearLayoutButton"
@@ -49,8 +48,8 @@
             android:id="@+id/addButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add_bookmark" 
-            android:visibility="gone"/>
+            android:text="@string/add_bookmark"
+            android:visibility="gone" />
     </LinearLayout>
 
     <TextView
@@ -68,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView4"
         android:layout_alignBottom="@+id/textView4"
-        android:layout_alignLeft="@+id/urlTextView"/>
+        android:layout_alignLeft="@+id/urlTextView" />
 
     <TextView
         android:id="@+id/textView1"
@@ -88,5 +87,17 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="51dp"
         android:text="@string/url_label" />
+
+    <TextView
+        android:id="@+id/linkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/urlTextView"
+        android:layout_below="@+id/urlTextView"
+        android:layout_marginTop="14dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:text="TextView" />
 
 </RelativeLayout>

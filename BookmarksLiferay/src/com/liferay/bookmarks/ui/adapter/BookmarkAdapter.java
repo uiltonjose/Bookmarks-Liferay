@@ -18,22 +18,25 @@ public class BookmarkAdapter extends ArrayAdapter<BookmarkEntry> {
 	private ArrayList<BookmarkEntry> bookmarks;
 
 	public BookmarkAdapter(Context context, ArrayList<BookmarkEntry> bookmarks) {
-		super(context, R.layout.item_bookmark, bookmarks);
+		super(context, R.layout.item_bookmark_list, bookmarks);
 		this.context = context;
 		this.bookmarks = bookmarks;
 	}
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		LayoutInflater inflater = (LayoutInflater) context
-				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-		View rowView = inflater.inflate(R.layout.item_bookmark, parent, false);
+		View rowView = inflater.inflate(R.layout.item_bookmark_list, parent, false);
 
-		TextView textView = (TextView) rowView.findViewById(R.id.nameTextView);
+		TextView bookmarkNameTextView = (TextView) rowView.findViewById(R.id.nameTextView);
 
-		BookmarkEntry bookmark = bookmarks.get(position);
-		textView.setText(bookmark.getName());
+		if (bookmarks != null && !bookmarks.isEmpty()) {
+			BookmarkEntry bookmark = bookmarks.get(position);
+			if (bookmark != null) {
+				bookmarkNameTextView.setText(bookmark.getName());
+			}
+		}
 
 		return rowView;
 	}

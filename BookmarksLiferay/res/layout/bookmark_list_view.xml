@@ -1,31 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:gravity="center" >
 
-        <Button
-            android:id="@+id/addButton"
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Bookmark" />
+            android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/refreshButton"
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_bookmark_label" />
+
+            <Button
+                android:id="@+id/refreshButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refresh_bookmark_label" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Refresh Bookmark" />
-    </LinearLayout>
+            android:layout_below="@+id/linearLayoutButtons"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                android:hint="Search" >
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
 
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp" >
     </ListView>
 
 </LinearLayout>
