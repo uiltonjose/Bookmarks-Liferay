@@ -27,28 +27,19 @@
                 android:layout_height="wrap_content"
                 android:text="@string/refresh_bookmark_label" />
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/linearLayoutButtons"
-            android:orientation="horizontal" >
-
-            <EditText
-                android:id="@+id/editTextSearch"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionSearch"
-                android:hint="Search" >
-            </EditText>
-        </LinearLayout>
     </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_search" />
 
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="3dp" >
+        android:layout_marginTop="8dp" >
     </ListView>
 
 </LinearLayout>

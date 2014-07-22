@@ -30,5 +30,6 @@
     <string name="do_you_wish_to_exit_without_to_update_message_dialog">Do you wish to exit without to update?</string>
     <string name="yes_label_button">Yes</string>
     <string name="no_label_button">No</string>
+    <string name="hint_search">Search</string>
 
 </resources>

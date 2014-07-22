@@ -20,7 +20,7 @@ public class BookmarkAdapter extends ArrayAdapter<BookmarkEntry> {
 	public BookmarkAdapter(Context context, ArrayList<BookmarkEntry> bookmarks) {
 		super(context, R.layout.item_bookmark_list, bookmarks);
 		this.context = context;
-		this.bookmarks = bookmarks;
+		this.setBookmarks(bookmarks);
 	}
 
 	@Override
@@ -31,14 +31,27 @@ public class BookmarkAdapter extends ArrayAdapter<BookmarkEntry> {
 
 		TextView bookmarkNameTextView = (TextView) rowView.findViewById(R.id.nameTextView);
 
-		if (bookmarks != null && !bookmarks.isEmpty()) {
-			BookmarkEntry bookmark = bookmarks.get(position);
+		if (getBookmarks() != null && !getBookmarks().isEmpty()) {
+			BookmarkEntry bookmark = getBookmarks().get(position);
 			if (bookmark != null) {
 				bookmarkNameTextView.setText(bookmark.getName());
 			}
 		}
 
 		return rowView;
+	}
+
+	@Override
+	public int getCount() {
+		return getBookmarks().size();
+	}
+
+	public ArrayList<BookmarkEntry> getBookmarks() {
+		return bookmarks;
+	}
+
+	public void setBookmarks(ArrayList<BookmarkEntry> bookmarks) {
+		this.bookmarks = bookmarks;
 	}
 
 }
