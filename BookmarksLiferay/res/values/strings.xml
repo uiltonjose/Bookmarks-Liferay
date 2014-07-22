@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bookmarks Liferay</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="description_label">Description:</string>
+    <string name="url_label">URL:</string>
+    <string name="name_label">Name:</string>
+    <string name="delete_bookmark">Delete Bookmark</string>
+    <string name="edit_bookmark">Edit Bookmark</string>
+    <string name="add_bookmark">Add Bookmark</string>
+    <string name="adding_bookmark_message">Adding Bookmark...</string>
+    <string name="error_to_try_add_bookmark_message">Error to try add Bookmark</string>
+    <string name="updating_bookmark_message">Updating Bookmark...</string>
+    <string name="error_to_try_update_bookmark_message">Error to try update Bookmark</string>
+    <string name="deleting_bookmark_message">Deleting Bookmark...</string>
+    <string name="error_to_try_delete_bookmark_message">Error to try delete Bookmark</string>
+    <string name="loading_bookmarks_message">Loading Bookmarks...</string>
+    <string name="couldn_t_get_bookmarks_message">Couldn\'t get bookmarks</string>
+    <string name="invalid_url_message">Invalid URL</string>
+    <string name="url_field_is_required_message">URL field is required</string>
+    <string name="bookmark_added_message">Bookmark Added.</string>
+    <string name="check_your_connection_and_try_again">Check your connection and try again</string>
+    <string name="bookmark_deleted_message">Bookmark deleted.</string>
+    <string name="bookmark_updated_message">Bookmark updated</string>
+
+</resources>
