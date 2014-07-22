@@ -1,4 +1,4 @@
-package com.liferay.bookmarks.ui.acitivity;
+package com.liferay.bookmarks.ui.activity;
 
 import java.util.ArrayList;
 

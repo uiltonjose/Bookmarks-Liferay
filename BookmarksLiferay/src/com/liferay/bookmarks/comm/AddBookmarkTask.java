@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.liferay.bookmarks.R;
 import com.liferay.bookmarks.model.BookmarkEntry;
-import com.liferay.bookmarks.ui.acitivity.AddBookmarkActivity;
+import com.liferay.bookmarks.ui.activity.AddBookmarkActivity;
 import com.liferay.bookmarks.util.ConnectionUtil;
 import com.liferay.mobile.android.service.Session;
 import com.liferay.mobile.android.v62.bookmarksentry.BookmarksEntryService;
