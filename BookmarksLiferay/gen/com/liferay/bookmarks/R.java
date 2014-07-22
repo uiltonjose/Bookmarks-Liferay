@@ -25,11 +25,14 @@ public final class R {
         public static final int deleteButton=0x7f060005;
         public static final int descriptionTextView=0x7f060009;
         public static final int editButton=0x7f060006;
-        public static final int icon=0x7f06000c;
+        public static final int editTextSearch=0x7f06000d;
+        public static final int icon=0x7f06000f;
         public static final int linearLayoutButton=0x7f060004;
-        public static final int listview=0x7f06000b;
+        public static final int linearLayoutButtons=0x7f06000b;
+        public static final int linkTextView=0x7f06000a;
+        public static final int listview=0x7f06000e;
         public static final int nameTextView=0x7f060000;
-        public static final int refreshButton=0x7f06000a;
+        public static final int refreshButton=0x7f06000c;
         public static final int textView1=0x7f060001;
         public static final int textView2=0x7f060008;
         public static final int textView4=0x7f060003;
@@ -38,13 +41,14 @@ public final class R {
     public static final class layout {
         public static final int bookmark_form=0x7f030000;
         public static final int bookmark_list_view=0x7f030001;
-        public static final int item_bookmark=0x7f030002;
+        public static final int item_bookmark_list=0x7f030002;
         public static final int layout_main=0x7f030003;
         public static final int view_bookmark_description=0x7f030004;
     }
     public static final class string {
         public static final int action_settings=0x7f050002;
         public static final int add_bookmark=0x7f050008;
+        public static final int add_bookmark_label=0x7f050017;
         public static final int adding_bookmark_message=0x7f050009;
         public static final int app_name=0x7f050000;
         public static final int bookmark_added_message=0x7f050013;
@@ -55,16 +59,22 @@ public final class R {
         public static final int delete_bookmark=0x7f050006;
         public static final int deleting_bookmark_message=0x7f05000d;
         public static final int description_label=0x7f050003;
+        public static final int do_you_wish_to_exit_without_to_update_message_dialog=0x7f05001a;
         public static final int edit_bookmark=0x7f050007;
         public static final int error_to_try_add_bookmark_message=0x7f05000a;
         public static final int error_to_try_delete_bookmark_message=0x7f05000e;
         public static final int error_to_try_update_bookmark_message=0x7f05000c;
         public static final int hello_world=0x7f050001;
+        public static final int hint_search=0x7f05001d;
         public static final int invalid_url_message=0x7f050011;
         public static final int loading_bookmarks_message=0x7f05000f;
         public static final int name_label=0x7f050005;
+        public static final int no_label_button=0x7f05001c;
+        public static final int not_updated_changes_title_dialog=0x7f050019;
+        public static final int refresh_bookmark_label=0x7f050018;
         public static final int updating_bookmark_message=0x7f05000b;
         public static final int url_field_is_required_message=0x7f050012;
         public static final int url_label=0x7f050004;
+        public static final int yes_label_button=0x7f05001b;
     }
 }
